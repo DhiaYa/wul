@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunga Untuk Wulan</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff4b5c;
+        }
+        .flower-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .flower {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+        .petal {
+            width: 50px;
+            height: 50px;
+            background: #ff4b5c;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .petal:nth-child(1) { top: 0; left: 25px; }
+        .petal:nth-child(2) { top: 25px; left: 50px; }
+        .petal:nth-child(3) { top: 50px; left: 25px; }
+        .petal:nth-child(4) { top: 25px; left: 0; }
+        .center {
+            width: 40px;
+            height: 40px;
+            background: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        .stem {
+            width: 10px;
+            height: 100px;
+            background: green;
+            margin: 0 auto;
+        }
+        .pot {
+            width: 60px;
+            height: 50px;
+            background: #b5651d;
+            margin: 0 auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: relative;
+        }
+        .pot:before {
+            content: "";
+            width: 80px;
+            height: 20px;
+            background: #8b4513;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ini untukmu, Wulan! 🌸</h1>
+    <p>Semoga hari kamu lebih indah seperti bunga ini!</p>
+    <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem"></div>
+        <div class="pot"></div>
+    </div>
+</body>
+</html>
